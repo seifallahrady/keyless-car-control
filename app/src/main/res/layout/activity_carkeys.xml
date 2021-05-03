@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Carkeys"
+    android:background="@drawable/background2">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/black"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/ivacon"
+        android:layout_width="205dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/acon"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/ivacoff"
+        android:layout_width="208dp"
+        android:layout_height="202dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="asdasd"
+        app:srcCompat="@drawable/acoff" />
+
+    <ImageView
+        android:id="@+id/ivlock"
+        android:layout_width="197dp"
+        android:layout_height="196dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="207dp"
+        android:layout_marginTop="243dp"
+        android:layout_marginEnd="7dp"
+        android:contentDescription="asdasd"
+        app:srcCompat="@drawable/lock" />
+
+    <ImageView
+        android:id="@+id/ivunlock"
+        android:layout_width="196dp"
+        android:layout_height="193dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="213dp"
+        android:contentDescription="asdasdasd"
+        app:srcCompat="@drawable/unlocked" />
+
+    <ImageView
+        android:id="@+id/ivwindon"
+        android:layout_width="202dp"
+        android:layout_height="191dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="434dp"
+        app:srcCompat="@drawable/windowon"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/ivwindoff"
+        android:layout_width="196dp"
+        android:layout_height="194dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="438dp"
+        android:layout_marginEnd="7dp"
+        app:srcCompat="@drawable/windowoff" />
+
+
+</RelativeLayout>
