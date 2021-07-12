@@ -66,7 +66,6 @@ public class Carkeys extends AppCompatActivity {
         });
 
     }
-
     private static OkHttpClient getUnsafeOkHttpClient() {
         try {
             // Create a trust manager that does not validate certificate chains
@@ -154,7 +153,54 @@ public class Carkeys extends AppCompatActivity {
 
             }
         });
+        ilock.setOnClickListener(new View.OnClickListener() {
 
+
+            @Override
+            public void onClick(View v) {
+
+                String url = "https://207.154.220.61:9443/I-2WVJmzCOtGoGi3uRZ0585eDTqD2w73/update/D12?value=0";
+                callHttp(url);
+
+
+            }
+        });
+        iunlock.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+
+                String url = "https://207.154.220.61:9443/I-2WVJmzCOtGoGi3uRZ0585eDTqD2w73/update/D12?value=1";
+                callHttp(url);
+
+
+            }
+        });
+        iwindon.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+
+                String url = "https://207.154.220.61:9443/I-2WVJmzCOtGoGi3uRZ0585eDTqD2w73/update/D11?value=1";
+                callHttp(url);
+
+
+            }
+        });
+        iwindoff.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+
+                String url = "https://207.154.220.61:9443/I-2WVJmzCOtGoGi3uRZ0585eDTqD2w73/update/D11?value=0";
+                callHttp(url);
+
+
+            }
+        });
         //Initialize And Assign Variables
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
