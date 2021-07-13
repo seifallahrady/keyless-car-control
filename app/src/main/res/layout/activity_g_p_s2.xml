@@ -16,10 +16,10 @@
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
+    <WebView
+        android:id="@+id/webview1"
         android:layout_width="match_parent"
-        android:layout_height="673dp" />
+        android:layout_height="match_parent" />
 
 
 </RelativeLayout>
